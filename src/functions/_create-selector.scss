@@ -55,7 +55,7 @@
 @function _create-selector-element($name, $in-a-modifier:false) {
   @if ($in-a-modifier) {
     @return (
-      & + ">" + _create-selector-element($name)
+      & + " " + _create-selector-element($name)
     );
   }
 
